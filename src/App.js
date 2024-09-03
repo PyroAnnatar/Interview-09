@@ -23,7 +23,7 @@ const GrowingButton = () => {
           return prev;
         }
       });
-    }, 10);
+    }, 1000);
     return () => clearInterval(interval);
   }, [isGrowing]);
 
