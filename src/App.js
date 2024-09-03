@@ -15,7 +15,7 @@ const GrowingButton = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setGrowthStage((prev) => {
-        if (prev < 125 && isGrowing) {
+        if (prev < 400 && isGrowing) {
           return prev + 1;
         } else if (prev > 5 && !isGrowing) {
           return prev - 1;
